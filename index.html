@@ -8,7 +8,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-D0CEkmnC.js"></script>
+    <script type="module" crossorigin src="./assets/index-CRotAPot.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DKwl_nIp.css">
   </head>
   <body class="page">
@@ -53,7 +53,7 @@
                 id="user-name"
                 class="popup__input popup__input_type_name"
                 placeholder="Имя"
-                data-error-message="Должна содержать хотя бы одну букву (лат/кириллица), дефис или пробел"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
                 minlength="2"
                 maxlength="40"
                 pattern="^(?=.*[a-zA-Zа-яА-ЯЁё])[a-zA-Zа-яА-ЯЁё\s\-]+$"
@@ -97,10 +97,11 @@
                 id="place-name"
                 class="popup__input popup__input_type_card-name"
                 placeholder="Название"
-                data-error-message="Должна содержать хотя бы одну букву (лат/кириллица), дефис или пробел"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
                 minlength="2"
-                maxlength="40"
+                maxlength="30"
                 pattern="^(?=.*[a-zA-Zа-яА-ЯЁё])[a-zA-Zа-яА-ЯЁё\s\-]+$"
+                required
               />
               <span class="popup__error" id="place-name-error"></span>
             </label>
